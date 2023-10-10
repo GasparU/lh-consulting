@@ -10,12 +10,12 @@ function ImagenHome() {
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 1;
-    const newIndex = isFirstSlide ? 3 - 1 : currentIndex - 1;
+    const newIndex = isFirstSlide ? 4 - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
 
   const nextSlide = () => {
-    const isLastSlide = currentIndex === 3 - 1;
+    const isLastSlide = currentIndex === 4 - 1;
     const newIndex = isLastSlide ? 1 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
@@ -23,7 +23,7 @@ function ImagenHome() {
   return (
     <div className='  w-full m-auto  relative group  '>
       <span className='static  '>
-        <Image src={`/slider${currentIndex}.jpg`} width={1400} height={930} className='w-full h-full  bg-center bg-cover ' alt="imagen" />
+        <Image src={`/slider${currentIndex}.jpg`} width={1400} height={930} className='w-full h-full  bg-center bg-cover transition duration-700 ease-in-out' alt="imagen" />
         <ImagenHomeIcons />
       </span>
 

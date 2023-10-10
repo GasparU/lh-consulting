@@ -16,7 +16,7 @@ export default function HomeSecondMain() {
                 <span >Nos encargamos de efectuar una revisión exhaustiva de la situación fiscal de su empresa.</span>
                 <span >
                     <Button className="mt-6" color="primary">
-                        <Link href={'/servicios/impuestos'}>
+                        <Link href={'/servicios/impuestos'} >
                             Ver más
                         </Link>
                     </Button>
@@ -32,7 +32,7 @@ export default function HomeSecondMain() {
                 <span >Nos especializamos en defender su patrimonio y sus derechos como contribuyente.</span>
                 <span >
                     <Button className="mt-6" color="primary">
-                        <Link href={'/servicios/contabilidad'}>
+                        <Link href={'/servicios/contabilidad'} >
                             Ver más
                         </Link>
                     </Button>
@@ -49,7 +49,7 @@ export default function HomeSecondMain() {
                 <span >Nos especializamos en defender su patrimonio y sus derechos como contribuyente.</span>
                 <span >
                     <Button className="mt-6" color="primary">
-                        <Link href={'/servicios/control-interno'}>
+                        <Link href={'/servicios/control-interno'} >
                             Ver más
                         </Link>
                     </Button>
@@ -65,7 +65,7 @@ export default function HomeSecondMain() {
                 <span >Nos encargaremos de atender los requerimientos de compras de bienes y servicios de su empresa.</span>
                 <span >
                     <Button className="mt-6" color="primary">
-                        <Link href={'/servicios/compras'}>
+                        <Link href={'/servicios/compras'} >
                             Ver más
                         </Link>
                     </Button>
@@ -81,7 +81,7 @@ export default function HomeSecondMain() {
                 <span >Nos especializamos en defender su patrimonio y sus derechos como contribuyente.</span>
                 <span >
                     <Button className="mt-6" color="primary">
-                        <Link href={'/servicios/legal'}>
+                        <Link href={'/servicios/legal'} >
                             Ver más
                         </Link>
                     </Button>
