@@ -4,29 +4,29 @@ import { FaCartShopping, FaChartLine, FaLandmark, FaListCheck, FaMoneyBillTrendU
 export default function ImagenHomeIcons() {
         return (
 
-                <div className="w-full absolute bottom-0 flex justify-center justify-items-center items-center content-center flex-auto">
-                        <div className="w-1/6 bg-sky h-44 flex  items-center  justify-center " >
-                                <FaMoneyBillTrendUp style={{ color: '#eff3fb' }} size={40} />
-                                <p className="text-white  text-xl">Impuestos</p>
+                <div className="lh-consulting md:w-full xl:w-full absolute bottom-0 hidden md:flex xl:flex justify-center justify-items-center items-center content-center flex-auto">
+                        <div className="lh-consulting w-1/6 bg-sky h-0 md:h-32 xl:h-44 flex  items-center  justify-center " >
+                                {/* <FaMoneyBillTrendUp className="lh-consulting md:text-xl xl:text-5xl mx-1" style={{ color: '#eff3fb' }}  /> */}
+                                <p className="lh-consulting text-white text-0 md:text-md xl:text-xl">Impuestos</p>
                         </div>
-                        <div className="w-1/6 bg-blue h-44 flex items-center  justify-center" >
-                                <FaChartLine style={{ color: '#eff3fb' }} size={40}/>
-                                <p className="text-white px-2 text-xl">Contabilidad</p>
+                        <div className="lh-consulting w-1/6 bg-blue h-0 md:h-32 xl:h-44 flex items-center  justify-center" >
+                                {/* <FaChartLine className="lh-consulting md:text-xl xl:text-5xl mx-1" style={{ color: '#eff3fb' }} /> */}
+                                <p className="lh-consulting text-white px-2 md:text-md xl:text-xl">Contabilidad</p>
                         </div>
-                        <div className="w-1/6 bg-sky h-44 flex items-center  justify-center " >
-                                <FaListCheck style={{ color: '#eff3fb' }} size={40}/>
-                                <div className="flex flex-col">
-                                <p className="text-white px-4 text-xl ">Control</p>
-                                <p className="text-white px-4 text-xl ">Interno</p>
+                        <div className="lh-consulting w-1/6 bg-sky h-0 md:h-32 xl:h-44 flex items-center  justify-center " >
+                                {/* <FaListCheck className="lh-consulting md:text-xl xl:text-5xl mx-1" style={{ color: '#eff3fb' }} /> */}
+                                <div className="lh-consulting flex flex-col">
+                                <p className="lh-consulting text-white px-4 md:text-md xl:text-xl ">Control</p>
+                                <p className="lh-consulting text-white px-4 md:text-md xl:text-xl ">Interno</p>
                                 </div>
                         </div>
-                        <div className="w-1/6 bg-blue h-44 flex items-center  justify-center" >
-                                <FaCartShopping style={{ color: '#eff3fb' }} size={40}/>
-                                <p className="text-white  text-xl">Compras</p>
+                        <div className="lh-consulting w-1/6 bg-blue h-0 md:h-32 xl:h-44 flex items-center  justify-center" >
+                                {/* <FaCartShopping className="lh-consulting md:text-xl xl:text-5xl mx-1" style={{ color: '#eff3fb' }} /> */}
+                                <p className="lh-consulting text-white  md:text-md xl:text-xl">Compras</p>
                         </div>
-                        <div className="w-1/6 bg-sky h-44 flex items-center  justify-center" >
-                                <FaLandmark style={{ color: '#eff3fb' }} size={40}/>
-                                <p className="text-white  text-xl">Legal</p>
+                        <div className="lh-consulting w-1/6 bg-sky h-0 md:h-32 xl:h-44 flex items-center  justify-center" >
+                                {/* <FaLandmark className="lh-consulting md:text-xl xl:text-5xl mx-1" style={{ color: '#eff3fb' }} /> */}
+                                <p className="lh-consulting text-white  md:text-md xl:text-xl">Legal</p>
                         </div>
                 </div>
         )
