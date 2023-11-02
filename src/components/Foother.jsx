@@ -2,6 +2,20 @@
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image';
+// import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet'
+// import 'leaflet/dist/leaflet.css'
+// import L from 'leaflet'
+// import icon from 'leaflet/dist/images/marker-icon.png'
+// import iconShadow from 'leaflet/dist/images/marker-shadow.png'
+
+// const iconUbicacion = new L.icon({
+//   iconUrl: icon,
+//   iconShadow: iconShadow,
+//   iconSize: [25, 41],
+//   iconAnchor: [12, 41],
+//   popupAnchor: [1, -34],
+//   shadowSize: [41, 41]  
+// })
 
 export default function Foother() {
   return (
@@ -34,6 +48,14 @@ export default function Foother() {
         <p className='my-3'>Ubiquenos en la siguiente dirección</p>
         <p className='my-3'>Cal. Shell Nro 343 Int. 602 Urb. Leuro, Miraflores - Lima</p>
 
+        {/* <MapContainer className='w-96 h-96 mb-8' center={[-12.0431800, -77.0282400]} zoom={13} scrollWheelZoom={true}> 
+          <TileLayer
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          <Marker position={[-12.0431800, -77.0282400]} icon={iconUbicacion}>
+           
+          </Marker>
+        </MapContainer> */}
       </span>
 
     </div>

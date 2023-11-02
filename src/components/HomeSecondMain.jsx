@@ -16,11 +16,7 @@ export default function HomeSecondMain() {
                 <span className="md:h-60 xl:h-48 text-xl md:text-lg w-4/5 md:w-full xl:text-2xl lg:w-full xl:w-full lg:h-48 " >Nos encargamos de efectuar una revisión exhaustiva de la situación fiscal de su empresa.</span>
                 <span >
                     <Button className="mt-6" color="primary">
-<<<<<<< HEAD
                         <Link className="text-xl sx:p-3 md:p-2 lg:m-3 xl:m-4" href={'/servicios/impuestos'}>
-=======
-                        <Link href={'/servicios/impuestos'} >
->>>>>>> 70bad90f40063367c67d691157324dfd8be2cad4
                             Ver más
                         </Link>
                     </Button>
@@ -36,11 +32,7 @@ export default function HomeSecondMain() {
                 <span className="md:h-60 xl:h-48 text-xl md:text-lg w-4/5 md:w-full xl:text-2xl lg:w-full xl:w-full lg:h-48" >Nos especializamos en defender su patrimonio y sus derechos como contribuyente.</span>
                 <span >
                     <Button className="mt-6" color="primary">
-<<<<<<< HEAD
                         <Link className="text-xl sx:p-3 md:p-2 lg:m-3 xl:m-4" href={'/servicios/contabilidad'}>
-=======
-                        <Link href={'/servicios/contabilidad'} >
->>>>>>> 70bad90f40063367c67d691157324dfd8be2cad4
                             Ver más
                         </Link>
                     </Button>
@@ -57,11 +49,7 @@ export default function HomeSecondMain() {
                 <span className="md:h-60 xl:h-48 text-xl md:text-lg w-4/5 md:w-full xl:text-2xl lg:w-full xl:w-full lg:h-48">Nos especializamos en defender su patrimonio y sus derechos como contribuyente.</span>
                 <span >
                     <Button className="mt-6" color="primary">
-<<<<<<< HEAD
                         <Link className="text-xl sx:p-3 md:p-2 lg:m-3 xl:m-4" href={'/servicios/control-interno'}>
-=======
-                        <Link href={'/servicios/control-interno'} >
->>>>>>> 70bad90f40063367c67d691157324dfd8be2cad4
                             Ver más
                         </Link>
                     </Button>
@@ -77,11 +65,7 @@ export default function HomeSecondMain() {
                 <span className="md:h-60 xl:h-48 text-xl md:text-lg w-4/5 md:w-full xl:text-2xl lg:w-full xl:w-full lg:h-48">Nos encargaremos de atender los requerimientos de compras de bienes y servicios de su empresa.</span>
                 <span >
                     <Button className="mt-6" color="primary">
-<<<<<<< HEAD
                         <Link className="text-xl sx:p-3 md:p-2 lg:m-3 xl:m-4" href={'/servicios/compras'}>
-=======
-                        <Link href={'/servicios/compras'} >
->>>>>>> 70bad90f40063367c67d691157324dfd8be2cad4
                             Ver más
                         </Link>
                     </Button>
@@ -97,11 +81,7 @@ export default function HomeSecondMain() {
                 <span className="md:h-60 xl:h-48 text-xl md:text-lg w-4/5 md:w-full xl:text-2xl lg:w-full xl:w-full lg:h-48">Nos especializamos en defender su patrimonio y sus derechos como contribuyente.</span>
                 <span >
                     <Button className="mt-6" color="primary">
-<<<<<<< HEAD
                         <Link className="text-xl sx:p-3 md:p-2 lg:m-3 xl:m-4" href={'/servicios/legal'}>
-=======
-                        <Link href={'/servicios/legal'} >
->>>>>>> 70bad90f40063367c67d691157324dfd8be2cad4
                             Ver más
                         </Link>
                     </Button>

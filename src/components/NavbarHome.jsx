@@ -1,125 +1,36 @@
 'use client'
-import React from "react";
+// import { Accordion, AccordionItem } from "@nextui-org/react";
+import Link from "next/link";
+import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button, Navbar } from "@nextui-org/react";
 
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, DropdownTrigger, DropdownMenu, DropdownItem, Dropdown } from "@nextui-org/react";
-import Image from "next/image";
-import {FaMoneyBillTrendUp, FaChartLine, FaListCheck, FaCartShopping, FaLandmark, FaAngleDown} from 'react-icons/fa6';
 
 export default function App() {
 
   return (
-    <Navbar disableAnimation isBordered >
-      <NavbarContent className="sm:hidden" justify="start">
-
-        <NavbarMenuToggle />
-      </NavbarContent>
-      <NavbarContent className="sm:hidden pr-3" justify="center">
-        <NavbarBrand>
-          {/* Logo oculto, se muestra en celulares */}
-          <Image src={'/logo.jpg'} width={160} height={58} alt="LH-Consulting" />
-        </NavbarBrand>
-      </NavbarContent>
-      <NavbarContent className="hidden sm:flex gap-4" >
-        <NavbarBrand>
-          {/* Logo que se muestra en pantallas grandes */}
-          <Image src={'/logo.jpg'} width={160} height={58} alt="LH-Consulting" />
-        </NavbarBrand>
-        <div className="flex gap-10">
-          <NavbarItem>
-            <Link color="foreground" href="/">
-              Inicio
-            </Link>
-          </NavbarItem>
-          <NavbarItem isActive>
-            <Link href="/nosotros" className="p-0 bg-transparent data-[hover=true]:bg-transparent" >
-              Nosotros
-            </Link>
-          </NavbarItem>
-          <Dropdown>
-          <NavbarItem>
-            <DropdownTrigger>
-            <Button
-                disableRipple
-                className="p-0 bg-transparent data-[hover=true]:bg-transparent"
-                endContent={icons.service}
-                radius="sm"
-                variant="light"
-              >
-                Servicios
-              </Button>
-            </DropdownTrigger>
-          </NavbarItem>
-          <DropdownMenu
-            // aria-label="ACME features"
-            className="w-[340px]"
-            itemClasses={{
-              base: "gap-4",
-            }}
+    <Navbar className="flex items-center">
+      <div>Imagen</div>
+      <div className="flex flex-1"></div>
+      <Link className="p-4" href={'/'}>Home</Link>
+      <Dropdown backdrop="blur" >
+        <DropdownTrigger>
+          <Button
+            color="light"
           >
-            <DropdownItem
-              key="autoscaling"
-              // description="ACME scales apps to meet user demand, automagically, based on load."
-            startContent={icons.taxes}
-            >
-              <Link href="/servicios/impuestos">
-              Impuestos
-              </Link>
-            </DropdownItem>
-            <DropdownItem
-              key="usage_metrics"
-              // description="Real-time metrics to debug issues. Slow query added? We’ll show you exactly where."
-            startContent={icons.account}
-            >
-              <Link href="/servicios/contabilidad">
-              Contabilidad
-              </Link>
-            </DropdownItem>
-            <DropdownItem
-              key="production_ready"
-              // description="ACME runs on ACME, join us and others serving requests at web scale."
-            startContent={icons.control}
-            >
-              <Link href="/servicios/control-interno">
-              Control Interno
-              </Link>
-            </DropdownItem>
-            <DropdownItem
-              key="99_uptime"
-              // description="Applications stay on the grid with high availability and high uptime guarantees."
-            startContent={icons.shopping}
-            >
-              <Link href="/servicios/compras">
-              Compras
-              </Link>
-            </DropdownItem>
-            <DropdownItem
-              key="supreme_support"
-              // description="Overcome any challenge with a supporting team ready to respond."
-            startContent={icons.legal}
-            >
-              <Link href="/servicios/legal">
-              Legal
-              </Link>
-            </DropdownItem>
-          </DropdownMenu>
-          </Dropdown>
-        </div>
+            Servicios
+          </Button>
+        </DropdownTrigger>
+        <DropdownMenu variant="faded" aria-label="Static Actions">
+          <DropdownItem ><Link className="p-4" href={'/servicios/compras'}>Compras</Link></DropdownItem>
+          <DropdownItem ><Link className="p-4" href={'/servicios/contabilidad'}>Contabilidad</Link></DropdownItem>
+          <DropdownItem ><Link className="p-4" href={'/servicios/control-interno'}>Control Interno</Link></DropdownItem>
+          <DropdownItem ><Link className="p-4" href={'/servicios/impuestos'}>Impuestos</Link></DropdownItem>
+          <DropdownItem ><Link className="p-4" href={'/servicios/legal'}>Legal</Link></DropdownItem>
 
-      </NavbarContent>
-
-      <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              // className="w-full"
-              href="#"
-              size="lg"
-            >
-              {item}
-            </Link>
-          </NavbarMenuItem>
-        ))}
-      </NavbarMenu>
+        </DropdownMenu>
+      </Dropdown>
+      <Link className="p-4" href={'/clientes'}>Clientes</Link>
+      <Link className="p-4" href={'/blog'}>Enlaces de Interés</Link>
+      <Link className="p-4" href={'/contacto'}>Contacto</Link>
     </Navbar>
 
   );
