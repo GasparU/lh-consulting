@@ -8,7 +8,7 @@ export default function Legal() {
             <div className='flex justify-center'>
                 <h1 className="mt-10 text-xl md:text-2xl lg:text-2xl xl:text-4xl"><b>LEGAL</b></h1>
             </div>
-            <span className='flex xs:flex md:flex lg:flex xl:flex justify-center items-center justify-items-center'>
+            <span className='flex xs:flex md:flex lg:flex xl:flex justify-center items-center justify-items-center mb-10'>
                 <span className='flex-col mx-8 mt-8 md:mt-0 lg:mt-0 xl_mt-0 md:mx-16 xl:mx-8 lg:mx-10 md:w-7/8 xl:w-1/3 '>
                     <span className="md:m-6" >
                         <p className="font-poppins text-2xl"><b>ASESORIA LEGAL PERMANENTE</b> </p>

@@ -12,12 +12,12 @@ export default function Impuestos() {
       </Link> */}
       <Image src={'/banner.jpg'} width={3000} height={272} alt='fondo servicios' />
       <div className='flex justify-center'>
-          <h1><b>IMPUESTOS</b></h1>
+        <h1 className="mt-10 text-xl md:text-2xl lg:text-2xl xl:text-4xl"><b>IMPUESTOS</b></h1>
       </div>
-      <span className='flex justify-center items-center justify-items-center mt-10'>
-  
-        <span className='flex flex-col w-1/3 mr-10 mb-200'>
-          <span >
+      <span className='flex xs:flex md:flex lg:flex xl:flex justify-center items-center justify-items-center mb-10'>
+
+        <span className='flex-col mx-8 mt-8 md:mt-0 lg:mt-0 xl_mt-0 md:mx-16 xl:mx-8 lg:mx-10 md:w-7/8 xl:w-1/3 '>
+          <span className="md:m-6">
             <p className="font-poppins text-2xl"><b>ASESORÍA FISCAL CONTINUA</b> </p>
             <p className='my-3 font-poppins'>
               Mediante nuestra asesoría fiscal continua o permanente, proporcionamos a nuestros clientes la
@@ -68,7 +68,7 @@ export default function Impuestos() {
         </span>
 
         <span className='w-1/2 justify-items-center items-center justify-center ml-10'>
-          <Image src={'/impuestos2.jpg'} width={1280} height={720} alt='nosotros' />
+          <Image className="w-0 md:w-0 lg:w-full xl:w-full" src={'/impuestos2.jpg'} width={1280} height={720} alt='nosotros' />
         </span>
       </span>
     </div>
