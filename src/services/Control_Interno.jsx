@@ -41,7 +41,7 @@ export default function Control_Interno() {
         </span>
 
         <span className='w-1/2 justify-items-center items-center justify-center ml-10'>
-          <Image className="w-0 md:w-0 lg:w-full xl:w-full" src={'/control_interno.jpg'} width={1280} height={720} alt='nosotros' />
+          <Image className="w-0 md:w-0 lg:w-full xl:w-full" src={'/control2.jpg'} width={880} height={620} alt='nosotros' />
         </span>
       </span>
     </div>

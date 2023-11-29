@@ -45,7 +45,7 @@ export const Contabilidad = () => {
                 </span>
 
                 <span className='w-1/2 justify-items-center items-center justify-center ml-10'>
-                    <Image className="w-0 md:w-0 lg:w-full xl:w-full" src={'/impuestos2.jpg'} width={1280} height={720} alt='nosotros' />
+                    <Image className="w-0 md:w-0 lg:w-full xl:w-full" src={'/contabilidad2.jpg'} width={1280} height={720} alt='nosotros' />
                 </span>
             </span>
         </div>

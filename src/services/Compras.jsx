@@ -43,7 +43,7 @@ export default function Compras() {
                 </span>
 
                 <span className='w-1/2 justify-items-center items-center justify-center ml-10'>
-                    <Image className="w-0 md:w-0 lg:w-full xl:w-full" src={'/control_interno.jpg'} width={1280} height={720} alt='nosotros' />
+                    <Image className="w-0 md:w-0 lg:w-full xl:w-full" src={'/compras2.jpg'} width={1280} height={720} alt='nosotros' />
                 </span>
             </span>
         </div>
