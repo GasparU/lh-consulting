@@ -24,7 +24,7 @@ function ImagenHome() {
     <div className=' w-full m-auto overflow-hidden  relative group  '>
       <span className='static'>
         <Image src={`/slider${currentIndex}.jpg`} width={1400} height={40} 
-        className='w-full xl:h-[80vh]' alt="imagen" />
+        className='w-cover xl:h-[80vh]' alt="imagen" />
         <ImagenHomeIcons />
       </span>
       <span className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl 

@@ -1,6 +1,8 @@
 'use client'
+import Image from 'next/image'
 import React from 'react'
 import { motion } from "framer-motion";
+import Logo from '@/components/Logo';
 
 const quote = {
     initial: {
@@ -9,7 +11,7 @@ const quote = {
     animate: {
         opacity: 1,
         transition: {
-            delay: 0.02,
+            delay: 0.1,
             staggerChildren: 0.08
         }
     }
@@ -34,19 +36,59 @@ const logos = [
     { empresas: "/LOGO_LOGISTIC.png" }, { empresas: "/LOGO_PANAMEDICAL.png" }, { empresas: "/LOGO_AGM.jpg" },
 ]
 
+// const ImageClient = ({ src }) => {
+//     return (
+//         <motion.div className='flex w-52 h-52 bg-white justify-center items-center rounded-xl hover:opacity-75 bg-indigo duration-200
+//             hover:scale-110'
+//             variants={container}
+//             initial="hidden"
+//             animate="visible">
+//             <motion.div variants={item}>
+//                 <Image className='saturate-800 w-max h-max' src={src} width={350} height={150} alt='whatsapp' />
+//             </motion.div >
+//         </motion.div>
+
+//     )
+// }
+
+
+// export default function ClientPage() {
+//     return (
+//         <div className='flex gap-8 flex-wrap m-10 justify-items-center content-center justify-center'
+//         >
+//             {
+//                 logos.map(logo => (
+//                     <ImageClient key={logo.empresas} src={logo.empresas} />
+//                 ))
+//             }
+//         </div>
+//     )
+// }
 
 export default function ClientPage() {
     return (
 
+        // <motion.div className='flex flex-wrap  rounded-xl hover:opacity-75 bg-indigo duration-200 hover:scale-110 gap-10 my-16 mx-16'
+        //     variants={container}
+        //     initial="hidden"
+        //     animate="visible"
+        // >
+        //     {
+        //         logos.map(logo => (
+        //             <motion.img key={logo.empresas} src={logo.empresas} variants={item} className='saturate-800 w-96 h-max' />
+        //         ))
+        //     }
+        // </motion.div>
+
         <div className='py-2'>
-            <motion.div className={`flex items-center flex-wrap gap-10 m-10 `}
+            <motion.div className={`flex items-center flex-wrap gap-10 m-10 justify-center `}
                 variants={quote}
                 initial="initial"
                 animate="animate"
             >
                 {
                     logos.map((logo) =>
-                        <motion.img key={logo.empresas} className=' w-96 h-44 rounded-xl object-scale-down bg-white hover:scale-75 duration-200' src={logo.empresas}
+                        <motion.img key={logo.empresas} className=' w-96 h-44 rounded-xl object-scale-down bg-white ' src={logo.empresas}
                             variants={singelWord}
                         >
 

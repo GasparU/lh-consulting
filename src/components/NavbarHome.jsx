@@ -28,7 +28,7 @@ export default function App() {
   };
 
   return (
- 
+
 
     <Navbar onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
@@ -38,7 +38,7 @@ export default function App() {
         />
         <NavbarBrand>
           <AcmeLogo />
-          <p className="font-bold text-inherit">ACME</p>
+          {/* <p className="font-bold text-inherit">ACME</p> */}
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
@@ -121,7 +121,7 @@ export default function App() {
               // }
               color="foreground"
               className="w-full"
-              href={`/servicios/${item === "control interno" ? "control-interno": item}`}
+              href={`/servicios/${item === "control interno" ? "control-interno" : item}`}
               size="lg"
             >
               {item}
@@ -129,7 +129,7 @@ export default function App() {
           </NavbarMenuItem>
         ))}
         <NavbarItem isActive>
-          <Link href="/clientes" aria-current="page" color="foreground"> 
+          <Link href="/clientes" aria-current="page" color="foreground">
             Clientes
           </Link>
         </NavbarItem>

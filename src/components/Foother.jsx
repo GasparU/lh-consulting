@@ -26,9 +26,7 @@ export default function Foother() {
 
         <span className="relative flex h-20 w-20">
           <span className="animate-ping absolute  h-full w-full rounded-full bg-Emerald opacity-90 z-50"></span>
-          {/* <span className="relative  rounded-full -w-72 -h-72 bg-sky-500"> */}
-          <Image className='relative flex h-24 w-28' src={'/whatsapp.png'} width={100} height={100} alt='whatsapp' />
-          {/* </span> */}
+          <Image className='relative flex h-[90px] w-[150px]' src={'/whatsapp.png'} width={100} height={70} alt='whatsapp' />
         </span>
       </Link>
       <div className='w-1/3 text-center xl:text-2xl md:text-2xl text-xl mb-10 underline'>Principios</div>
@@ -50,14 +48,6 @@ export default function Foother() {
         <p className='my-3 xl:text-2xl md:text-2xl text-xl'>Ubiquenos en la siguiente dirección</p>
         <p className='my-3 xl:text-2xl md:text-2xl text-xl'>Av. 28 de julio 776 of. 401, Miraflores - Lima</p>
 
-        {/* <MapContainer className='w-96 h-96 mb-8 z-10' center={[-12.128155, -77.026369]} zoom={13} scrollWheelZoom={true}>
-          <TileLayer
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          <Marker position={[-12.128155, -77.026369]} icon={iconUbicacion}>
-          </Marker>
-        </MapContainer> */}
-       
       </span>
 
     </div>
