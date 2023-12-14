@@ -13,7 +13,7 @@ export default function HomeMain() {
             </span>
             {/* Imagen de la derecha */}
             <span className="hidden md:flex xl:flex md:w-1/2 xl:w-1/2 justify-center relative ">
-                <Image src={'/bienvenido-lh-consulting.png'} width={544} height={650} alt="bienvenido lh-consulting" />
+                <Image src={'/edificio_web.jpg'} width={544} height={650} alt="bienvenido lh-consulting" />
                 <span className="flex flex-col md:max-w-sm xl:max-w-sm bg-sky absolute bottom-0 ">
                     <Image src={'/mission-icon.png'} width={62} height={58} alt="image mission" />
                     <span className="text-white text-l px-11">

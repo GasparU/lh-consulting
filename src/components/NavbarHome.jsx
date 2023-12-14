@@ -1,7 +1,7 @@
 'use client'
 import { useState } from "react";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/react";
-import { ChevronDown, Lock, Activity, Flash, Server, TagUser, Scale } from "./Icons.jsx";
+import { ChevronDown} from "./Icons.jsx";
 import { AcmeLogo } from "./AcmeLogo.jsx";
 
 export default function App() {
@@ -13,22 +13,15 @@ export default function App() {
     "contabilidad",
     "control interno",
     "impuestos",
-    "legal",
-    "Log Out",
+    "legal"
   ];
 
   const icons = {
-    chevron: <ChevronDown fill="currentColor" size={16} />,
-    scale: <Scale className="text-warning" fill="currentColor" size={30} />,
-    lock: <Lock className="text-success" fill="currentColor" size={30} />,
-    activity: <Activity className="text-secondary" fill="currentColor" size={30} />,
-    flash: <Flash className="text-primary" fill="currentColor" size={30} />,
-    server: <Server className="text-success" fill="currentColor" size={30} />,
-    user: <TagUser className="text-danger" fill="currentColor" size={30} />,
+    chevron: <ChevronDown fill="currentColor" size={16} />
   };
 
   return (
-
+ 
 
     <Navbar onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
@@ -37,8 +30,7 @@ export default function App() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <AcmeLogo />
-          {/* <p className="font-bold text-inherit">ACME</p> */}
+          <AcmeLogo />     
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
@@ -77,13 +69,13 @@ export default function App() {
               <Link href="/servicios/impuestos" color="foreground">Impuestos</Link >
             </DropdownItem>
             <DropdownItem>
-              <Link href="/servicios/compras" color="foreground">Compras</Link >
+              <Link href="/servicios/contabilidad" color="foreground">Contabilidad</Link >
             </DropdownItem>
             <DropdownItem>
               <Link href="/servicios/control-interno" color="foreground">Control Interno</Link >
             </DropdownItem>
             <DropdownItem>
-              <Link href="/servicios/contabilidad" color="foreground">Contabilidad</Link >
+              <Link href="/servicios/compras" color="foreground">Compras</Link >
             </DropdownItem>
             <DropdownItem>
               <Link href="/servicios/legal" color="foreground">Legal</Link >
@@ -104,7 +96,7 @@ export default function App() {
       </NavbarContent>
       <NavbarMenu>
         <NavbarItem isActive>
-          <Link href="/" aria-current="page" color="foreground">
+          <Link href="/" aria-current="page" color="foreground" >
             Inicio
           </Link>
         </NavbarItem>
@@ -116,12 +108,9 @@ export default function App() {
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`} isActive>
             <Link
-              // color={
-              //   index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
-              // }
               color="foreground"
-              className="w-full"
-              href={`/servicios/${item === "control interno" ? "control-interno" : item}`}
+              className="ml-10"
+              href={`/servicios/${item === "control interno" ? "control-interno": item}`}
               size="lg"
             >
               {item}
@@ -129,7 +118,7 @@ export default function App() {
           </NavbarMenuItem>
         ))}
         <NavbarItem isActive>
-          <Link href="/clientes" aria-current="page" color="foreground">
+          <Link href="/clientes" aria-current="page" color="foreground"> 
             Clientes
           </Link>
         </NavbarItem>
