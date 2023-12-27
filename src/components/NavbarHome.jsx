@@ -83,16 +83,17 @@ export default function App() {
           </DropdownMenu>
         </Dropdown>
         <NavbarItem isActive>
+           {/* Investogar spnre isActive, foreground y aria-current */}
           <Link href="clientes" aria-current="page" color="foreground">
             Clientes
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          {/* Investogar spnre isActive, foreground y aria-current */}
+        {/* <NavbarItem isActive>
+         
           <Link color="foreground" href="/" aria-current="page" >
             Enlaces
           </Link>
-        </NavbarItem>
+        </NavbarItem> */}
       </NavbarContent>
       <NavbarMenu>
         <NavbarItem isActive>

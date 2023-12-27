@@ -33,7 +33,7 @@ const singelWord = {
 const logos = [
     { empresas: "/LOGO_CAJABAMBA.png" }, { empresas: "/LOGO_LEDESMA.jpeg" }, { empresas: "/LOGO_PARDO.png" }, { empresas: "/LOGO_MERCEDES.png" },
     { empresas: "/LOGO_CUART.png" }, { empresas: "/LOGO_DYNO.png" }, { empresas: "/LOGO_EMS.png" }, { empresas: "/LOGO_GOVI.png" },
-    { empresas: "/LOGO_LOGISTIC.png" }, { empresas: "/LOGO_PANAMEDICAL.png" }, { empresas: "/LOGO_AGM.jpg" },
+    { empresas: "/LOGO_LOGISTIC.png" }, { empresas: "/LOGO_PANAMEDICAL.png" }, { empresas: "/LOGO_AGM.jpg" },{ empresas: "/LOGO_SAINC.png" }
 ]
 
 // const ImageClient = ({ src }) => {
