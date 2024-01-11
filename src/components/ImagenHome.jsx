@@ -2,11 +2,20 @@
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import Image from 'next/image';
 import ImagenHomeIcons from './ImagenHomeIcons';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 function ImagenHome() {
 
   const [currentIndex, setCurrentIndex] = useState(1);
+
+  useEffect(() => {
+    let init = setInterval(()=>{
+      setCurrentIndex( prev => ((prev+1) >= 4 ? 1 : prev + 1))
+    },4000)
+  return ()=> clearInterval(init)
+  
+  }, [])
+  
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 1;
